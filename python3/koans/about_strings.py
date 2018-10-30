@@ -41,16 +41,15 @@ class AboutStrings(Koan):
     def test_use_backslash_at_the_end_of_a_line_to_continue_onto_the_next_line(self):
         string = "It was the best of times,\n\
 It was the worst of times."
-        self.assertEqual("It was the best of times,\n\
-It was the worst of times.", len(string))
-
+        self.assertEqual(52, len(string))
+# Question 44 is wrong but this is what passes the test.
     def test_triple_quoted_strings_can_span_lines(self):
         string = """
 Howdy,
 world!
 """
-        self.assertEqual(, len(string))
-
+        self.assertEqual(15, len(string))
+# Question 51 is asking if its a string but the answer that passes is 15.
     def test_triple_quoted_strings_need_less_escaping(self):
         a = "Hello \"world\"."
         b = """Hello "world"."""
