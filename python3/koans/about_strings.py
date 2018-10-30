@@ -48,8 +48,10 @@ It was the worst of times."
 Howdy,
 world!
 """
+
         self.assertEqual(15, len(string))
 # Question 51 is asking if its a string but the answer that passes is 15.
+
     def test_triple_quoted_strings_need_less_escaping(self):
         a = "Hello \"world\"."
         b = """Hello "world"."""
