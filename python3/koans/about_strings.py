@@ -55,11 +55,11 @@ world!
     def test_triple_quoted_strings_need_less_escaping(self):
         a = "Hello \"world\"."
         b = """Hello "world"."""
-        self.assertEqual(__, (a == b))
-
+        self.assertEqual(True, (a == b))
+#
     def test_escaping_quotes_at_the_end_of_triple_quoted_string(self):
         string = """Hello "world\""""
-        self.assertEqual(__, string)
+        self.assertEqual('Hello "world"', string)
 
     def test_plus_concatenates_strings(self):
         string = "Hello, " + "world"
